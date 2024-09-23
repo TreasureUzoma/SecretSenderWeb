@@ -3,7 +3,7 @@ const Hero = () => {
         <header className="h-[65vh] mt-[5.4rem] flex justify-center items-center text-center px-10 md:h-[750px]">
             <div className="my_fixed_width_2">
                 <h1 className="text-4xl font-[800] my-2">
-                    Ask me anything (<span className="text-[#DA0037]">Literally</span>)
+                    Ask me anything (<span className="text-[#DA0037]">literally</span>)
                 </h1>
                 <p className="text-base my-2">
                     Ask anonymously, get weirdly honest answers, and uncover unexpected truths.
