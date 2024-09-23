@@ -1,9 +1,20 @@
+import { motion } from 'framer-motion';
+
 const Hero = () => {
     return (
         <header className="h-[65vh] mt-[5.4rem] flex justify-center items-center text-center px-10 md:h-[750px]">
             <div className="my_fixed_width_2">
                 <h1 className="text-4xl font-[800] my-2">
-                    Ask me anything (<span className="text-[#DA0037]">literally</span>)
+                    Ask me anything (
+                    <motion.span
+                        className="text-[#DA0037]"
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.5 }}
+                    >
+                        literally
+                    </motion.span>
+                    )
                 </h1>
                 <p className="text-base my-2">
                     Ask anonymously, get weirdly honest answers, and uncover unexpected truths.
@@ -21,4 +32,5 @@ const Hero = () => {
         </header>
     );
 };
+
 export default Hero;

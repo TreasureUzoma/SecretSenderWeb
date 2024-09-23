@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer className="absolute left-0 right-0 p-5 text-center font-bold text-lg bg-black">
+        <footer className="absolute left-0 right-0 py-9 px-5 text-center font-bold text-lg bg-black">
             <div>
                 <p className="text-2xl my-4 mb-6">SecretSender</p>
                 <div className="grid place-items-center grid-cols-2 gap-4 my-8 md:grid-cols-4 md:gap-x-2">
