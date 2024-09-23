@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  outline: none;
+  font-family: rubik;
+  color: #fff;
+}
+body {
+  background-color: #040104;
+}
+.my_fixed_width {
+    width: 85%;
+    max-width: 1200px;
+}
+.my_fixed_width_2 {
+    width: 91%;
+    max-width: 900px;
+}
+
+@media (min-width:720px) {
+  .my_fixed_width_2 {
+    width: 40%;
+  }
+}
