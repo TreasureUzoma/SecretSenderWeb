@@ -69,7 +69,7 @@ function Nav() {
                     id="mobile-nav"
                     className="bottom-0 fixed left-0 right-0 top-[5.2rem] z-50 bg-transparent bg-opacity-60 backdrop-filter backdrop-blur-md px-8"
                 >
-                    <div className="float-right bg-[#fefefe] rounded-3xl py-3 px-6">
+                    <div className="bg-[#fefefe] rounded-3xl py-8 w-full px-6">
                         <a
                             href="#"
                             className="block rounded-3xl border border-[2px] border-[#DA0037] text-center bg-[#DA0037] text-sm font-bold py-2 px-6 text-white my-2"

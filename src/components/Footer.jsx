@@ -9,15 +9,15 @@ const Footer = () => {
                     <Link to="/about" className="underline">
                         About
                     </Link>
-                    <Link to="/contact" className="underline">
+                    <a href="mailto: codebytehq@gmail.com" className="underline">
                         Contact
-                    </Link>
-                    <Link to="/support" className="underline">
+                    </a>
+                    <a target="_blank" href="https://yosendfunds.vercel.app" className="underline">
                         Support
-                    </Link>
-                    <Link to="/developers" className="underline">
+                    </a>
+                    <a target="_blank" href="https://treasureuzoma.vercel.app" className="underline">
                         Developers
-                    </Link>
+                    </a>
                 </div>
                 <a className="my-6 block" href="mailto: codebytehq@gmail.com">
                     codebytehq@gmail.com

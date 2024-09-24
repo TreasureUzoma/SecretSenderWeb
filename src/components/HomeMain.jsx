@@ -179,71 +179,71 @@ const HomeMain = () => {
                     <div className="marquee">
                         <div className="marquee-content">
                             
-                            What’s your best food?
+                            what’s your best food?
                             <span className="px-2">•</span>
-                            Are you still in a relationship?
+                            are you still in a relationship?
                             <span className="px-2">•</span>
-                            When is the registration starting?
+                            when is the registration starting?
                             <span className="px-2">•</span>
-                            What’s your favorite hobby?
+                            what’s your favorite hobby?
                             <span className="px-2">•</span>
-                            Do you have any pets?
+                            do you have any pets?
                             <span className="px-2">•</span>
-                            What’s your dream vacation?
+                            what’s your dream vacation?
                             <span className="px-2">•</span>
-                            What’s your favorite movie?
+                            what’s your favorite movie?
                             <span className="px-2">•</span>
-                            Who’s your idol? <span className="px-2">•</span>
-                            What’s your biggest fear?
+                            who’s your idol? <span className="px-2">•</span>
+                            what’s your biggest fear?
                             <span className="px-2">•</span>
-                            What inspires you? <span className="px-2">•</span>
-                            What’s your favorite book?
+                            what inspires you? <span className="px-2">•</span>
+                            what’s your favorite book?
                             <span className="px-2">•</span>
-                            Are you a morning person or night owl?
+                            are you a morning person or night owl?
                             <span className="px-2">•</span>
-                            What’s your favorite sport?
+                            what’s your favorite sport?
                             <span className="px-2">•</span>
-                            Do you play any musical instruments?
+                            do you play any musical instruments?
                             <span className="px-2">•</span>
-                            What’s your go-to comfort food?
+                            what’s your go-to comfort food?
                             <span className="px-2">•</span>
-                            What’s a skill you want to learn?
+                            what’s a skill you want to learn?
                             <span className="px-2">•</span>
-                            If you could have any superpower, what would it be?
+                            if you could have any superpower, what would it be?
                             <span className="px-2">•</span>
-                            What’s your favorite season?
+                            what’s your favorite season?
                             <span className="px-2">•</span>
-                            What’s your biggest achievement?
+                            what’s your biggest achievement?
                             <span className="px-2">•</span>
-                            What would you do if you won the lottery?
+                            what would you do if you won the lottery?
                             <span className="px-2">•</span>
-                            What’s your favorite type of music?
+                            what’s your favorite type of music?
                             <span className="px-2">•</span>
-                            Where do you see yourself in five years?
+                            where do you see yourself in five years?
                             <span className="px-2">•</span>
-                            What’s your favorite childhood memory?
+                            what’s your favorite childhood memory?
                             <span className="px-2">•</span>
-                            What’s one thing on your bucket list?
+                            what’s one thing on your bucket list?
                             <span className="px-2">•</span>
-                            What’s your favorite way to relax?
+                            what’s your favorite way to relax?
                             <span className="px-2">•</span>
-                            What’s your go-to karaoke song?
+                            what’s your go-to karaoke song?
                             <span className="px-2">•</span>
-                            What’s a place you want to visit?
+                            what’s a place you want to visit?
                             <span className="px-2">•</span>
-                            What motivates you to work hard?
+                            what motivates you to work hard?
                             <span className="px-2">•</span>
-                            What’s your favorite ice cream flavor?
+                            what’s your favorite ice cream flavor?
                             <span className="px-2">•</span>
-                            If you could meet anyone, dead or alive, who would
+                            if you could meet anyone, dead or alive, who would
                             it be? <span className="px-2">•</span>
-                            What’s your biggest pet peeve?
+                            what’s your biggest pet peeve?
                             <span className="px-2">•</span>
-                            What’s your favorite type of cuisine?
+                            what’s your favorite type of cuisine?
                             <span className="px-2">•</span>
-                            What’s a fun fact about yourself?
+                            what’s a fun fact about yourself?
                             <span className="px-2">•</span>
-                            What are you most passionate about?
+                            what are you most passionate about?
                         </div>
                     </div>
                 </div>
