@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 * {
-  outline: none;
-  font-family: rubik;
-  color: #fff;
+    outline: none;
+    font-family: rubik;
 }
 body {
-  background-color: #040104;
+    color: #fff;
+    background-color: #040104;
 }
 .my_fixed_width {
     width: 85%;
@@ -29,14 +29,54 @@ body {
         background-position: 0% 50%;
     }
 }
-
 .animate-gradient {
     background-size: 200% 200%;
     animation: gradientAnimation 10s ease infinite;
 }
 
-@media (min-width:720px) {
-  .my_fixed_width_2 {
-    width: 40%;
-  }
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    position: relative;
+}
+.marquee::before,
+.marquee::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    pointer-events: none; 
+    z-index: 1;
+}
+.marquee::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(128, 128, 128, 0.1), transparent);
+}
+.marquee::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(128, 128, 128, 0.1), transparent);
+}
+
+.marquee-content {
+    display: inline-block;
+    padding-left: 20%;
+    animation: marquee 90s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(-100%);
+    }
+}
+
+
+@media (min-width: 720px) {
+    .my_fixed_width_2 {
+        width: 40%;
+    }
 }
