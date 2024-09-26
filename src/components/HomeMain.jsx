@@ -168,7 +168,7 @@ const HomeMain = () => {
                     <div>
                         <h2 className="text-2xl mb-6">Join the party!</h2>
                         <a
-                            href="#"
+                            href="https://secretsenderapp.vercel.app"
                             className="rounded-3xl border border-[2px] border-black text-center bg-[#DA0037] text-sm font-bold py-3 px-6 text-white my-2"
                         >
                             Get started now

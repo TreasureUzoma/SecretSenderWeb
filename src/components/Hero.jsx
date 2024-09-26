@@ -32,7 +32,7 @@ const Hero = () => {
                 </motion.p>
                 
                 <motion.a 
-                    href="#"
+                    href="https://secretsenderapp.vercel.app"
                     target="_blank"
                     className="inline-flex items-center justify-between bg-[#DA0037] px-5 py-3 rounded-3xl text-[0.78rem] font-bold w-[8rem] text-white my-7 transition-transform duration-300 hover:scale-105"
                     initial="hidden"

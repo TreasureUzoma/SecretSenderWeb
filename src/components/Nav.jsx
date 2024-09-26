@@ -54,7 +54,7 @@ function Nav() {
                             </Link>
                         </div>
                         <a
-                            href="#"
+                            href="https://secretsenderapp.vercel.app"
                             className="rounded-3xl border border-[2px] border-black text-center bg-[#DA0037] text-sm text-sm font-bold py-2 px-6 text-white my-2 hidden md:flex"
                         >
                             Get Started
@@ -71,7 +71,7 @@ function Nav() {
                 >
                     <div className="bg-[#fefefe] rounded-3xl py-8 w-full px-6">
                         <a
-                            href="#"
+                            href="https://secretsenderapp.vercel.app"
                             className="block rounded-3xl border border-[2px] border-[#DA0037] text-center bg-[#DA0037] text-sm font-bold py-2 px-6 text-white my-2"
                         >
                             Get Started
