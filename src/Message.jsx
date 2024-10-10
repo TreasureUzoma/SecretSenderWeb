@@ -57,10 +57,7 @@ const Message = () => {
                     if (snapshot.exists()) {
                         const userData = snapshot.val();
                         setMessageTitle(userData.defaultMsgTitle);
-                        setPicUrl(
-                            userData.profilePicUrl ||
-                                "https://secretsenderapp.vercel.app/images/Portrait_Placeholder.png"
-                        );
+                        setPicUrl((userData.profilePicUrl) || 'https://secretsenderapp.vercel.app/images/Portrait_Placeholder.png');
                     }
                 });
                 setUserExists(true);
@@ -82,25 +79,18 @@ const Message = () => {
         if (messageRegex.test(messageContent)) {
             setSubmitting(true);
             try {
-                const response = await fetch("https://secretsenderweb/api/sendMessage", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify({ username, messageContent })
-                });
-
-                const data = await response.json();
-
-                if (response.ok) {
-                    setMessageContent("");
-                    showCustomAlert("Success", data.message);
-                } else {
-                    showCustomAlert(
-                        "Error",
-                        data.error || "Something went wrong!"
-                    );
-                }
+                const messageData = {
+                    title: messageTitle,
+                    date: serverTimestamp(),
+                    seen: false,
+                    opened: false,
+                    message: messageContent
+                };
+                const docRef = doc(firestore, "AllMessages", userUID);
+                const subcollectionRef = collection(docRef, "theMessages");
+                await addDoc(subcollectionRef, messageData);
+                setMessageContent("");
+                showCustomAlert("Success", "Message sent successfully 🔥");
             } catch (error) {
                 showCustomAlert("Error", `Something went wrong! ${error} 😞`);
             } finally {
@@ -214,5 +204,6 @@ const Message = () => {
 
     return <NotFound />;
 };
+
 
 export default Message;
