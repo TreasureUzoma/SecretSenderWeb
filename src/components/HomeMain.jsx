@@ -175,7 +175,7 @@ const HomeMain = () => {
                         </a>
                     </div>
                 </div>
-                <div className="text-white w-full h-5">
+                <div className="text-white w-full h-6 py-4">
                     <div className="marquee">
                         <div className="marquee-content">
                             
