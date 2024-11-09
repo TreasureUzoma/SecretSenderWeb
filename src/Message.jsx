@@ -57,7 +57,10 @@ const Message = () => {
                     if (snapshot.exists()) {
                         const userData = snapshot.val();
                         setMessageTitle(userData.defaultMsgTitle);
-                        setPicUrl((userData.profilePicUrl) || 'https://secretsenderapp.vercel.app/images/Portrait_Placeholder.png');
+                        setPicUrl(
+                            userData.profilePicUrl ||
+                                "https://secretsenderapp.vercel.app/images/Portrait_Placeholder.png"
+                        );
                     }
                 });
                 setUserExists(true);
@@ -143,9 +146,10 @@ const Message = () => {
                                 <span>
                                     <img
                                         src={picUrl}
-                                        className="w-[2.5rem] rounded-full"
+                                        className="w-[2.5rem] h-[2.5rem] rounded-full object-cover"
                                     />
                                 </span>
+
                                 <span className="inline-flex flex-col space-y-1 text-[0.9rem] py-3">
                                     <span className="leading-none">
                                         @{username}
@@ -204,6 +208,5 @@ const Message = () => {
 
     return <NotFound />;
 };
-
 
 export default Message;
