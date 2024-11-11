@@ -7,7 +7,7 @@ const Hero = () => {
     };
 
     return (
-        <header className="h-[90vh] mt-[5.4rem] flex justify-center items-center text-center px-10 md:h-[780px] relative overflow-hidden bg-black md:mt-0">
+        <header className="h-[90vh] mt-[5.1rem] flex justify-center items-center text-center px-10 md:h-[790px] relative overflow-hidden bg-black md:mt-0">
             <div className="my_fixed_width_2">
                 <motion.h1 
                     className="text-4xl font-[800] my-2"

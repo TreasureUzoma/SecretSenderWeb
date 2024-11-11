@@ -68,7 +68,7 @@ const HomeMain = () => {
                             key={index}
                             data-index={index}
                             ref={el => (sectionsRef.current[index] = el)}
-                            className="w-full max-w-[18rem] h-[18rem] py-4 rounded-xl bg-[#111] flex text-left px-9 items-center justify-center mx-auto"
+                            className="w-full max-w-[18.1rem] h-[18rem] py-6 rounded-xl bg-[#111] flex text-left px-9 items-center justify-center mx-auto"
                             variants={boxVariants}
                             initial="hidden"
                             animate={visibleIndex[index] ? "visible" : "hidden"}
@@ -82,7 +82,7 @@ const HomeMain = () => {
                                 <h3 className="font-bold text-lg">
                                     {item.title}
                                 </h3>
-                                <p className="font-normal mt-2 text-slate-100">
+                                <p className="font-normal mt-2 text-slate-100 text-[0.95rem]">
                                     {item.description}
                                 </p>
                             </div>
@@ -96,7 +96,7 @@ const HomeMain = () => {
                         <h2 className="text-2xl mt-3">
                             Easy, Secure, Anonymous
                         </h2>
-                        <p className="mb-4 mt-2">
+                        <p className="mb-4 mt-2 text-[0.95rem]">
                             SecretSender makes it simple to discover what your
                             friends think of you in a fun and anonymous way.
                         </p>
@@ -155,7 +155,7 @@ const HomeMain = () => {
                                 <h3 className="font-bold text-lg">
                                     {item.title}
                                 </h3>
-                                <p className="font-normal mt-2 text-slate-100">
+                                <p className="font-normal mt-2 text-slate-100 text-[0.95rem]">
                                     {item.description}
                                 </p>
                             </div>
@@ -178,7 +178,6 @@ const HomeMain = () => {
                 <div className="text-white w-full h-6 py-4">
                     <div className="marquee">
                         <div className="marquee-content">
-                            
                             what’s your best food?
                             <span className="px-2">•</span>
                             are you still in a relationship?
