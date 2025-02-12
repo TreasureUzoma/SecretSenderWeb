@@ -11,11 +11,11 @@ import {
     serverTimestamp,
     doc,
     analytics
-} from "./utility/firebaseConfig";
+} from "../utility/firebaseConfig";
 import CustomAlert, {
     showCustomAlert,
     closeCustomAlert
-} from "./components/app/CustomAlert";
+} from "../components/app/CustomAlert";
 
 const Message = () => {
     const [loading, setLoading] = useState(true);
@@ -133,7 +133,7 @@ const Message = () => {
 
     if (userExists) {
         return (
-            <div className="p-5 bg-gradient-to-135 opacity-85 w-full flex justify-center text-center min-h-screen md:items-center">
+            <div className="mt-12 p-5 bg-gradient-to-135 opacity-85 w-full flex justify-center text-center min-h-screen md:items-center">
                 <div>
                     <form onSubmit={handleSubmit}>
                         <div

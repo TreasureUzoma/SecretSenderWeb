@@ -1,10 +1,6 @@
-import Nav from "./components/Nav";
-import Footer from "./components/Footer";
-
 const Privacy = () => {
     return (
         <>
-            <Nav />
             <main className="text-left mt-[5.4rem]">
                 <header className="flex justify-center">
                     <div className="my_fixed_width p-2 pb-5 border-b border-slate-800">
@@ -146,7 +142,6 @@ const Privacy = () => {
                     </section>
                 </section>
             </main>
-            <Footer />
         </>
     );
 };
