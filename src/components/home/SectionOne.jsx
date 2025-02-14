@@ -33,7 +33,9 @@ const SectionOne = ({ visibleIndex, setVisibleIndex, sectionsRef }) => {
                         key={index}
                         data-index={index}
                         ref={el => (sectionsRef.current[index] = el)}
-                        className="w-full py-8 rounded-xl bg-neutral-900 opacity-10 flex text-left px-9 items-center justify-center border border-neutral-800"
+                        className="w-full py-8 rounded-xl bg-neutral-900 bg-opacity-70 flex text-left px-9 items-center justify-center border border-neutral-800"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 1.05 }}
                         variants={boxVariants}
                         initial="hidden"
                         animate={visibleIndex[index] ? "visible" : "hidden"}
