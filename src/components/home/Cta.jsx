@@ -3,7 +3,7 @@ const Cta = () => {
         <section className="my-[7rem]">
             <div className="px-6 my-12 mx-auto text-center">
                 <h2 className="font-bold text-2xl">
-                    Get started now to enjoy SecretSender for free!
+                    Join the party!
                 </h2>
                 <a
                     href="https://secretsenderapp.vercel.app"
