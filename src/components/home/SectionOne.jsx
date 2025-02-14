@@ -9,9 +9,9 @@ const SectionOne = ({ visibleIndex, setVisibleIndex, sectionsRef }) => {
     return (
         <section>
             <h1 className="text-2xl mx-7 my-5 mb-6 md:mx-7 lg:text-3xl">
-                Experience the power of anonymous messages.
+                What SecretSender offers!
             </h1>
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-3 w-full max-w-screen-xl mx-auto">
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-3 mx-auto w-full">
                 {[
                     {
                         title: "Honest answers, no judgment",
@@ -33,7 +33,7 @@ const SectionOne = ({ visibleIndex, setVisibleIndex, sectionsRef }) => {
                         key={index}
                         data-index={index}
                         ref={el => (sectionsRef.current[index] = el)}
-                        className="w-full max-w-[18.1rem] h-[18rem] py-6 rounded-xl bg-[#111] flex text-left px-9 items-center justify-center mx-auto"
+                        className="w-full py-8 rounded-xl bg-neutral-900 opacity-10 flex text-left px-9 items-center justify-center border border-neutral-800"
                         variants={boxVariants}
                         initial="hidden"
                         animate={visibleIndex[index] ? "visible" : "hidden"}
@@ -44,8 +44,8 @@ const SectionOne = ({ visibleIndex, setVisibleIndex, sectionsRef }) => {
                         }}
                     >
                         <div className="text-left">
-                            <h3 className="font-bold text-lg">{item.title}</h3>
-                            <p className="font-normal mt-2 text-slate-100 text-[0.95rem]">
+                            <h3 className="font-bold text-xl">{item.title}</h3>
+                            <p className="font-normal mt-3 text-neutral-400 text-base">
                                 {item.description}
                             </p>
                         </div>

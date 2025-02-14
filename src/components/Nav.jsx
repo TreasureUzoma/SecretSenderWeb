@@ -25,7 +25,7 @@ function Nav() {
 
     return (
         <div>
-            <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between py-5 bg-transparent bg-opacity-60 backdrop-filter backdrop-blur-md">
+            <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between py-4 bg-transparent bg-opacity-60 backdrop-filter backdrop-blur-md">
                 <div className="flex justify-center w-full">
                     <div className="w-full flex items-center justify-between my_fixed_width">
                         <Link to="/">
@@ -39,11 +39,7 @@ function Nav() {
                             className="bg-transparent rounded-md p-2 md:hidden"
                             onClick={toggleMobileNav}
                         >
-                            <i
-                                className={`fa ${
-                                    mobileNavOpen ? "fa-times fa-2x" : "fa-bars"
-                                } text-lg`}
-                            ></i>
+                            {mobileNavOpen ? <span className="material-icons">close</span> : <span className="material-icons">menu</span>}
                         </button>
 
                         {/* Desktop navigation */}
@@ -73,7 +69,7 @@ function Nav() {
             {mobileNavOpen && (
                 <div
                     id="mobile-nav"
-                    className="bottom-0 fixed left-0 right-0 top-[5.2rem] z-50 bg-transparent bg-opacity-60 backdrop-filter backdrop-blur-md px-8"
+                    className="bottom-0 fixed left-0 right-0 top-[5.3rem] z-50 bg-transparent bg-opacity-60 backdrop-filter backdrop-blur-md px-8"
                 >
                     <div className="bg-[#fefefe] rounded-3xl py-8 w-full px-6 grid grid-cols-2 gap-2">
                         {mobileNavLinks.map((link, index) =>

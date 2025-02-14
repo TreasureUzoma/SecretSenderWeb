@@ -10,11 +10,11 @@ const SectionThree = ({ visibleIndex, setVisibleIndex, sectionsRef }) => {
     return (
         <section>
             <h2 className="text-2xl mb-2">Join Our Community</h2>
-            <p className="mx-4 mb-6 text-slate-300 font-semibold">
+            <p className="mx-4 mb-6 text-neutral-300 font-medium">
                 Become part of a vibrant community where you can share, learn, and
                 connect with others who value open communication.
             </p>
-            <div className="flex flex-col gap-6 w-full max-w-screen-xl mx-auto md:flex-row md:justify-center">
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-3 mx-auto w-full">
                 {[
                     {
                         title: "Engage with Others",
@@ -36,7 +36,7 @@ const SectionThree = ({ visibleIndex, setVisibleIndex, sectionsRef }) => {
                         key={index}
                         data-index={index + 3} // Adjust index for the second set of items
                         ref={el => (sectionsRef.current[index + 3] = el)} // Adjust ref index
-                        className="w-full max-w-[18rem] py-4 rounded-xl bg-[#111] flex text-left p-3 px-5 items-center justify-center mx-auto"
+                        className="w-full py-8 rounded-xl bg-neutral-900 opacity-10 flex text-left px-9 items-center justify-center border border-neutral-800"
                         variants={boxVariants}
                         initial="hidden"
                         animate={visibleIndex[index + 3] ? "visible" : "hidden"}
@@ -46,9 +46,9 @@ const SectionThree = ({ visibleIndex, setVisibleIndex, sectionsRef }) => {
                             delay: (index + 3) * 0.1
                         }}
                     >
-                        <div className="text-left px-4 py-11">
-                            <h3 className="font-bold text-lg">{item.title}</h3>
-                            <p className="font-normal mt-2 text-slate-100 text-[0.95rem]">
+                        <div>
+                            <h3 className="font-bold text-xl">{item.title}</h3>
+                            <p className="font-normal mt-3 text-neutral-400 text-base">
                                 {item.description}
                             </p>
                         </div>

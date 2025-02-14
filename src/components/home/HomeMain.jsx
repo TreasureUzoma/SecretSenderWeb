@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import SectionOne from "./home/SectionOne";
-import SectionTwo from "./home/SectionTwo";
-import SectionThree from "./home/SectionThree";
+import SectionOne from "./SectionOne";
+import SectionTwo from "./SectionTwo";
+import SectionThree from "./SectionThree";
 
 const HomeMain = () => {
     const [visibleIndex, setVisibleIndex] = useState(Array(6).fill(false)); // 6 items to track

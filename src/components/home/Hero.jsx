@@ -10,7 +10,7 @@ const Hero = () => {
         <header className="h-[90vh] mt-[5.1rem] flex justify-center items-center text-center px-10 md:h-[790px] relative overflow-hidden bg-black md:mt-0">
             <div className="my_fixed_width_2">
                 <motion.h1 
-                    className="text-4xl font-[800] my-2"
+                    className="text-4xl md:text-5xl font-[800] my-2"
                     initial="hidden"
                     animate="visible"
                     variants={variants}
@@ -21,7 +21,7 @@ const Hero = () => {
                 </motion.h1>
                 
                 <motion.p 
-                    className="text-base my-2"
+                    className="text-[1.08rem] my-2 text-neutral-400"
                     initial="hidden"
                     animate="visible"
                     variants={variants}
@@ -34,7 +34,7 @@ const Hero = () => {
                 <motion.a 
                     href="https://secretsenderapp.vercel.app"
                     target="_blank"
-                    className="inline-flex items-center justify-between bg-[#DA0037] px-5 py-3 rounded-3xl text-[0.78rem] font-bold w-[8rem] text-white my-7 transition-transform duration-300 hover:scale-105"
+                    className="inline-flex items-center justify-between bg-[#DA0037] px-5 py-3 rounded-3xl text-[0.85rem] font-bold w-[8rem] text-white my-7 transition-transform duration-300 hover:scale-105"
                     initial="hidden"
                     animate="visible"
                     variants={variants}
@@ -42,7 +42,7 @@ const Hero = () => {
                 >
                     <span>Start Now</span>
                     <span className="material-icons text-[1rem]" alt="">
-                        open_in_new
+                        arrow_forward
                     </span>
                 </motion.a>
             </div>
