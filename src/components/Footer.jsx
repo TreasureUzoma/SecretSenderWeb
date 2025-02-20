@@ -9,15 +9,29 @@ const Footer = () => {
                     <Link to="/about" className="underline">
                         About
                     </Link>
-                    <a href="mailto: codebytehq@gmail.com" className="underline">
-                        Contact
-                    </a>
-                    <a target="_blank" href="https://yosendfunds.vercel.app" className="underline">
-                        Support
-                    </a>
-                    <a target="_blank" href="https://treasureuzoma.vercel.app" className="underline">
-                        Developers
-                    </a>
+                    {[
+                        {
+                            href: "mailto: codebytehq@gmail.com",
+                            name: "Contact"
+                        },
+                        {
+                            href: "https://yosendfunds.vercel.app",
+                            name: "Support"
+                        },
+                        {
+                            href: "https://treasureuzoma.netlify.app",
+                            name: "Developers"
+                        }
+                    ].map((link, index) => (
+                        <a
+                            key={index}
+                            href={link.href}
+                            target="_blank"
+                            className="underline"
+                        >
+                            {link.name}
+                        </a>
+                    ))}
                 </div>
                 <a className="my-6 block" href="mailto: codebytehq@gmail.com">
                     codebytehq@gmail.com
